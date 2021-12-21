@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    
+<form action="#" method="post">
+    <h2>Авторизация</h2>
+   <button type="submit" class="close AClass">
+        <span>&times;</span>
+    </button>
+
+    <div>
+        <input id="login" type="text" placeholder="логин" required name="login">
+        <span class="login-icon"><i class="far fa-user"></i></span>
+    </div>
+    <div>
+        <input id="password" type="password" placeholder="пароль" required minlength="6" name="password">
+        <span class="pwd-icon"><i class="fas fa-unlock-alt"></i></span>
+    </div>
+    <div>
+        <!-- .remember-label::before { стили псевдо чекбокса }
+        #remember:checked +  .remember-label::before { стили псевдо чекбокса } -->
+        <input id="remember" type="checkbox" name="remember" checked value="remember">
+        <label class="remember-label" for="remember">Запомнить</label>
+    </div>
+    <div class="low-btns">
+        <input id="enter" type="submit" value="Войти">
+        <a href=#>Забыли пароль? /</a>
+        <a href=#>Регистрация</a>
+        <!-- <input id="forgot-password" type="submit" value="Забыли пароль?">
+        <input id="reg" type="submit" value="Регистрация"> -->
+    </div>
+    
+</form>
+</body>
+</html>
+
+
+
+

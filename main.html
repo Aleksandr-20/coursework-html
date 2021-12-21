@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Компания ELEVAGE | Вина на любой вкус и цвет</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+
+				<nav class="menu__box">
+					<a class="menu__item" href="main.html">Главная</a>
+					<a class="menu__item" href="team.html">Наша команда</a>
+					<a class="menu__item" href="#">Ассортимент</a>
+					<a class="menu__item" href="#">Акции</a>
+					<a class="menu__item" href="#">События</a>
+					<a class="menu__item" href="#">Контакты</a>
+				</nav>
+			</div>
+			<a href="main.html">
+				<img src="img/logo-01.jpg" height="30" width="20">
+			</a>
+			<h2>ELEVAGE - не просто вино...</h2>
+		</div>
+		<div class="header-right">
+			<a href="tel:+78142332211"><span>+7(814)-233-22-11</span> <i class="fas fa-phone-alt"></i></a>
+			<a href="#"><span>Корзина</span> <i class="fas fa-shopping-cart"></i></a>
+			<a href="auth.html"><span>Авторизация</span> <i class="fas fa-user"></i></a>
+			<a href="#"><span>Поиск</span> <i class="fas fa-search"></i></a>			
+		</div>
+		
+		<nav id="menu">
+			<a href="main.html">Главная</a>
+			<a href="team.html">Наша команда</a>
+			<a href="#">Ассортимент</a>
+			<a href="#">Акции</a>
+			<a href="#">События</a>
+			<a href="#">Контакты</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="introduction" class="row-1">
+			<div class="row-1-col-1">
+				<h2>Философия нашей компании</h2>
+				<p>Погружаясь в мир вина, сложно не заметить, сколько аспектов его окружают. 
+				Это и различные почвы, климат, сорта винограда, технологии производства и, конечно же, люди.</p><br>
+				<p>Коллекция вина в нашей компании подобрана в таком стиле, чтобы Вы могли подобрать для себя любое направление. 
+				Мы попытались захватить все вкусовые ориентиры, но во главе угла - это качество и чистота вкуса. 
+				Все вина в нашего ассортимента прошли тщательный отбор. Здесь представлены как абсолютная классика,
+				так и модерновый подход к виноделию.</p><br>
+				<p>Вы можете задавать любые вопросы, касающиеся вина, наши кависты и сомелье с большим удовольствием ответят на них и подберут 
+				для Вас наиболее удачное сочетание.</p>
+			</div>
+			<div class="row-1-col-2">
+				<ul class="slider">
+					<li > <!-- position: relative; -->
+						<img src="img/main_pic_01.jpg" alt="Фото 1">
+					</li>
+					<li >
+						<img src="img/main_pic_02.jpg" alt="Фото 2">
+					</li>
+					<li class="active">
+						<img src="img/main_pic_03.jpg" alt="Фото 3">
+					</li>
+				</ul>	
+			</div>
+		</section>
+
+    	<section id="goods">
+			<div class="tabs">
+				<!-- <span>популярные товары</span>
+				<span>новинки</span>
+				<span>со скидкой</span> -->
+				<input id="tab1" type="radio" name="tabs" checked>
+    			<label for="tab1" title="Вкладка 1"><p>бестселлеры</p><span>hit</span></label>
+ 
+				<input id="tab2" type="radio" name="tabs">
+				<label for="tab2" title="Вкладка 2"><p>новинки</p><span>new</span></label>
+			
+				<input id="tab3" type="radio" name="tabs">
+				<label for="tab3" title="Вкладка 3"><p>со скидкой</p><span>%</span></label>
+			</div>
+
+			<div class="row-2">
+				<div class="item">
+					<h4> Вино Trimbach, Riesling AOC, 2018</h4>
+					<img src="img/row-2-3-wine-1.jpg" alt="Riesling-Trimbach">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,375</span>
+							<p class="price">2099 р.</p>
+						</div>
+						<div class="left-side">
+							<span>белое</span>
+							<span>Франция</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>	
+				</div>
+			
+			
+				<div class="item">
+					<h4> Вино Donnafugata, "Lumera", Sicilia DOC, 2020</h4>
+					<img src="img/row-2-3-wine-12.jpg" alt="Lumera">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,75</span>
+							<p class="price">2499 р.</p>
+						</div>
+						<div class="left-side">
+							<span>розовое</span>
+							<span>Италия</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>	
+				</div>
+			
+				<div class="item">
+					<h4>Вино "Telegramme", Chateauneuf-du-Pape, 2019</h4>
+					<!-- <h4> Вино Olivier Leflaive, Chassagne-Montrachet AOC, 2018</h4> -->
+					<img src="img/row-2-3-wine-7.jpg" alt="Chateauneuf-du-Pape">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,75</span>
+							<p class="price">7390 р.</p>
+						</div>
+						<div class="left-side">
+							<span>красное</span>
+							<span>Франция</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>	
+				</div>
+			
+				<div class="item">
+					<h4>Шампанское Perrier-Jouet, Blanc de Blanc, AOC</h4>
+					<img src="img/row-2-3-wine-5.jpg" alt="Perrier-Jouet">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,75</span>
+							<p class="price">9599 р.</p>
+						</div>
+						<div class="left-side">
+							<span>белое</span>
+							<span>Франция</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-3">
+				<div class="item">
+					<h4> Вино Ra Nui, "Haka", Marlborough, 2020</h4>
+					<img src="img/row-2-3-wine-9.jpg" alt="Haka">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,75</span>
+							<p class="price">2049 р.</p>
+						</div>
+						<div class="left-side">
+							<span>белое</span>
+							<span>Новая Зеландия</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>	
+				</div>
+			
+			
+				<div class="item">
+					<h4>"Psi", Ribera del Duero DO, 2018</h4>
+					<img src="img/row-2-3-wine-10.jpg" alt="Psi">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,75</span>
+							<p class="price">5399 р.</p>
+						</div>
+						<div class="left-side">
+							<span>красное</span>
+							<span>Испания</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>	
+				</div>
+			
+				<div class="item">
+					<h4>Вино San Felice, Chianti DOCG "Il Grigio", 2018</h4>
+					<img src="img/row-2-3-wine-11.jpg" alt="San-Felice">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,375</span>
+							<p class="price">1999 р.</p>
+						</div>
+						<div class="left-side">
+							<span>красное</span>
+							<span>Италия</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>	
+				</div>
+			
+				<div class="item">
+					<h4> Вино "Pfefferer" Pink, Weinberg Dolomiten IGT, 2020</h4>
+					<img src="img/row-2-3-wine-4.jpg" alt="Pfefferer-Pink">
+					<div class="description-wine">
+						<div class="right-side">
+							<span>сухое</span>
+							<span>0,75</span>
+							<p class="price">2299 р.</p>
+						</div>
+						<div class="left-side">
+							<span>розовое</span>
+							<span>Италия</span>
+							<a href="#"><i class="fas fa-shopping-cart"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="down-link">Весь каталог <i class="fas fa-arrow-right"></i></a>
+		</section>
+		<section id="news" class="row-4">
+			<h2>новости винного мира</h2>
+			<div class="news-img">
+				<img src="img/news-main-img.png" alt="news">
+			</div>
+			<div class="news-list">
+				<a href="#">
+					<h3>«Балтийский Кубок - 2021» определил лучших сомелье!</h3>
+					<p>В Санкт-Петербурге состоялся XIX Открытый профессиональный конкурс сомелье</p>
+				</a>
+				<a href="#">
+					<h3>Открылась первая винотека ELEVAGE в Санкт-Петербурге</h3>
+					<p>Первая локация, где можно купить вино из ассортимента компании ELEVAGE</p>
+				</a>
+			</div>
+			<a href="#" class="down-link">Все новости <i class="fas fa-arrow-right"></i></a>
+		</section>
+		<section id="blog" class="row-5">
+			<h2>Статьи о вине </h2>
+			<div class="articles">
+				<article>
+					<h3>Вина, которые помогут пережить зиму</h3>
+					<img src="img/blog-art-01.jpg" alt="article-img">
+					<p>Предлагаем подборку вин, которые можно держать в качестве небольшого запаса на зимний-пожарный, для любого настроения.
+						Зимой захочется вин более плотных и насыщенных, согревающих и обволакивающих, с оттенками специй, ванили, дерева и сухофруктов.</p>
+				</article>
+				<article class="article">
+					<h3>Все, что нужно знать о винах Шабли</h3>
+					<img src="img/blog-art-02.jpg" alt="article-img">
+					<p>История региона, лучшие года, иерархия, виноделы, полезные советы и дегустационные заметки.</p>
+				</article>
+			</div>
+			<a href="#" class="down-link">Еще статьи <i class="fas fa-arrow-right"></i></a>
+		</section>
+	</main>
+
+  	<div id="to-menu"><a href="#menu">К меню <i class="fas fa-level-up-alt"></i></a></div>
+
+	<footer>
+		<div class="main-footer">
+			<section class="newsletter-socnetworks">
+				<form action="#" method="post">
+					<div class="container">
+					<h2>Подпишитесь на рассылку</h2>
+					<p>Винные истории, акции и бонусы для своих.</p>
+					</div>
+					<div class="container">
+					<input type="text" placeholder="Электронная почта" name="mail" required><button type="submit">Подписаться</button>
+					<label>
+						<input type="checkbox" checked="checked" name="subscribe">Я согласен с условиями <a href="#">пользовательского соглашения</a>
+					</label>
+					</div>
+				</form>
+			
+				<div class="soc-network">
+					<p>мы в социальных сетях</p>
+					<a href="#" title="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+					<a href="#" title="https://web.telegram.org/"><i class="fab fa-telegram-plane"></i></a>
+					<a href="#" title="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+				</div>
+			</section>
+
+			<section class="customer-buyer">
+				<div class="custom">
+					<p>покупателям</p>
+						<a href="#">как сделать заказ</a>
+						<a href="#">как получить заказ</a>
+						<a href="#">контакты</a>
+						<a href="#">обратная связь</a>
+						<a href="#">гарантия</a>
+				</div>
+				<div class="buyer">
+					<p>сотрудничество</p>
+						<a href="#">частным клиентам</a>
+						<a href="#">корпоративным клиентам</a>
+						<a href="#">вакансии</a>
+				</div>
+			</section>
+
+			<section class="location">
+				<p><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</p>
+				<a href="tel:+78142332211"><i class="fas fa-phone-alt"></i> +7(814)-233-22-11</a>
+				<a href="elevage.company@cheers.ru"><i class="fas fa-envelope"></i> elevage.company@cheers.ru</a>
+			</section>
+		</div> 
+		<div class="footer-underline">
+			<p>©ELEVAGE, 2021</p>
+			<div><a href="#">Политика конфиденциальности</a></div>
+			<div><a href="#">О качестве и безопасности товаров</a></div>
+		</div>
+	</footer>
+</body>
+</html>

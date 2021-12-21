@@ -1,0 +1,247 @@
+@import "flex-grid.css";
+@import "style.css";
+
+.motto {
+	/* font-family: Georgia, 'Times New Roman', Times, serif; */
+	font-style: italic;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 0 0 .5rem #951cad;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+main {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#main-part {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.staff {
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+   	grid-template-rows: repeat(4, auto);
+	column-gap: 3.5rem;
+	row-gap: 1.5rem;
+	text-align: center;
+	justify-content: center;
+}
+
+.staff .person {
+	padding-top: .5rem;
+	background-color: rgb(245, 224, 199);
+}
+
+.person:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+	/* background-color: rgb(166, 144, 187); */
+}
+
+.person > div {
+	overflow: hidden;
+	height: 12em;
+}
+
+.person > div > img {
+	width: 80%;
+	height: 100%;
+}
+
+.full-name {
+	font-weight: bold;
+	font-size: medium;
+}
+
+.pos {
+	font-style: italic;
+	font-size: small;
+	padding: 0;
+}
+
+.response {
+	width: 40%;
+	margin: 0;
+}
+
+.response form span {
+	font-size: small;
+}
+
+form p {
+	font-style: italic;
+}
+
+.form-item {
+	position: relative;
+	padding-top: 2.5rem;
+	margin-bottom: .5rem;
+  }
+  
+  .form-item label {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+  }
+  
+  .response input,
+  .response textarea {
+	display: block;
+	width: 80%;
+	padding: 1.8rem 0 1.8rem 1rem;
+	border: 1px solid rgb(165, 34, 78);
+  }
+  
+  .response textarea {
+	min-height: 5rem;
+  }
+  
+  .response input[type="submit"] {
+	display: block;
+	width: 50%;
+	padding: 1.5rem;
+	background: rgb(165, 34, 78);
+	border: none;
+	margin-top: .5rem;
+}
+  
+.response input[type="submit"]:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.response input:focus,
+.response textarea:focus {
+	outline: none;
+	border: 1px solid rgb(107, 228, 107);
+  }
+
+  ::-webkit-input-placeholder {
+	opacity: 0;
+  }
+  
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder {
+	opacity: 1;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	#main-part {
+		display: flex;
+		flex-direction: column;
+	}
+	.staff {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 40%);
+		grid-template-rows: repeat(4, auto);
+		justify-content: center;
+	}
+	.staff .person {
+		width: 75%;
+		padding-top: .5rem;
+		margin: 0 auto;
+	}
+	.person > div {
+		overflow: hidden;
+		height: auto;
+	}
+	.response {
+		width: 100%;
+		margin: 0;
+	}
+	.response input,
+  	.response textarea {
+		padding: 1.6rem 0 1.6rem 1.6rem;
+  	}
+  	.response input[type="submit"] {
+		padding: 1.3rem;
+	}
+}
+
+  /* ширина от 600 до 767px */
+@media screen and (min-width: 600px) and (max-width: 767px){
+	.motto {
+		font-size: 16px;
+	}
+	#main-part {
+		display: flex;
+		flex-direction: column;
+	}
+	.staff {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 40%);
+		grid-template-rows: repeat(4, auto);
+		justify-content: center;
+	}
+	.staff .person {
+		width: 75%;
+		padding-top: .5rem;
+		margin: 0 auto;
+	}
+	.person > div {
+		overflow: hidden;
+		height: auto;
+	}
+	.response {
+		width: 100%;
+		margin: 0;
+	}
+	.response h2 {
+		font-size: 25px;
+	}
+	.response input,
+  	.response textarea {
+		padding: 1.4rem 0 1.4rem 1.4rem;
+  	}
+  	.response input[type="submit"] {
+		padding: 1.3rem;
+	}
+}
+
+  /* ширина до 599px */
+@media screen and (max-width: 599px){
+	.motto {
+		font-size: 13px;
+	}
+	#main-part {
+		display: flex;
+		flex-direction: column;
+	}
+	.staff {
+		width: 100%;
+		display: block;
+	}
+	.staff .person {
+		width: 50%;
+		padding-top: .5rem;
+		margin: 0 auto;
+	}
+	.person > div {
+		overflow: hidden;
+		height: auto;
+	}
+	.response {
+		width: 100%;
+		margin: 0;
+	}
+	.response h2 {
+		font-size: 21px;
+	}
+	.response input,
+  	.response textarea {
+		padding: 1rem 0 1rem 1rem;
+  	}
+  	.response input[type="submit"] {
+		padding: 1rem;
+	}
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<title>Команда | Elevage</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/team.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="header-left">
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+
+				<nav class="menu__box">
+					<a class="menu__item" href="main.html">Главная</a>
+					<a class="menu__item" href="team.html">Наша команда</a>
+					<a class="menu__item" href="#">Ассортимент</a>
+					<a class="menu__item" href="#">Акции</a>
+					<a class="menu__item" href="#">События</a>
+					<a class="menu__item" href="#">Контакты</a>
+				</nav>
+			</div>
+			<a href="main.html">
+				<img src="img/logo-01.jpg" height="30" width="20">
+			</a>
+			<h2>Наша команда</h2>
+		</div>
+		<div class="header-right">
+			<a href="tel:+78142332211"><span>+7(814)-233-22-11</span> <i class="fas fa-phone-alt"></i></a>
+			<a href="#"><span>Корзина</span> <i class="fas fa-shopping-cart"></i></a>
+			<a href="auth.html"><span>Авторизация</span> <i class="fas fa-user"></i></a>
+			<a href="#"><span>Поиск</span> <i class="fas fa-search"></i></a>			
+		</div>
+		
+		<nav id="menu">
+			<a href="main.html">Главная</a>
+			<a href="team.html">Наша команда</a>
+			<a href="#">Ассортимент</a>
+			<a href="#">Акции</a>
+			<a href="#">События</a>
+			<a href="#">Контакты</a>
+		</nav>
+	</header>
+	<main>
+		<p class="motto">Найти вино, которое человек полюбит всей душой — это вызов, и мы его принимаем каждый день</p>
+		<section id="main-part">
+			<section class="staff">
+				<div class="person">
+					<div><img src="img/team_gendir.png" alt="gendir"></div>
+					<p class="full-name">Тимофей Белоусов</p>
+					<p class="pos">Генеральный директор</p>
+				</div>
+				<div class="person">
+					<div><img src="img/team_opdir.png" alt="opdir"></div>
+					<p class="full-name">Ангелина Брыжинская</p>
+					<p class="pos">Операционный директор</p>
+				</div>
+				<div class="person">
+					<div><img src="img/team_findir.png" alt="findir"></div>
+					<p class="full-name">Валентин Лимонов</p>
+					<p class="pos">Финансовый директор</p>
+				</div class="person">
+				<div class="person">
+					<div><img src="img/team_dirmar.png" alt="dirmar"></div>
+					<p class="full-name">Даниил Шар</p>
+					<p class="pos">Директор по маркетингу</p>
+				</div>
+				<div class="person">
+					<div><img src="img/team_uprman.png" alt="uprman"></div>
+					<p class="full-name">Эдуард Репишъ</p>
+					<p class="pos">Управляющий менеджер</p>
+				</div>
+				<div class="person">
+					<div><img src="img/team_team.png" alt="team"></div>
+					<p class="full-name">Юлий Шампал</p>
+					<p class="pos">Менеджер по персоналу</p>
+				</div>
+				<div class="person">
+					<div><img src="img/team_som.png" alt="sommelier"></div>
+					<p class="full-name">Елизар Новинский</p>
+					<p class="pos">Ведущий сомелье</p>
+				</div>
+				<div class="person">
+					<div><img src="img/team_kav.png" alt="cavist"></div>
+					<p class="full-name">Филипп Черноусов</p>
+					<p class="pos">Ведущий кавист</p>
+				</div>
+	
+			</section>
+			<section class="response">
+				<form action="#" method="post">
+					<div class="container">
+					<h2>Построй карьеру в Elevage</h2>
+					<p>Заполни форму и наш специалист по кадрам свяжется с тобой</p>
+					</div>
+					<div class="form-item">
+						<label for="name">Имя и фамилия</label>
+						<input id="name" type="text" name="fullname" placeholder="Иван Иванов" required>
+					</div>
+					<div class="form-item">
+						<label for="email">E-mail</label>
+						<input id="email" type="email" name="email" placeholder="nickname@service.ru" required>
+					</div>
+					<div class="form-item">
+						<label for="tel">Телефон</label>
+						<input id="tel" type="tel" name="telephone" placeholder="+7 999 9999999" required>
+					</div>
+					<div class="form-item">
+						<label for="position">Желаемая должность</label>
+						<input id="position" type="text" placeholder="Сомелье">
+					</div>
+					<div class="form-item">
+						<label for="salary">Желаемая зарплата</label>
+						<input id="salary" type="number" min="10000" max="1000000" step="1000" name="salary" placeholder="50 000">
+					</div>
+					<div class="form-item">
+						<label for="cw">Ссылка на резюме</label>
+						<input id="cw" type="text" name="cw" placeholder="https://spb.hh.ru/resume/000">
+					</div>
+					<div class="form-item">
+						<label for="form-text">Сопроводительное письмо</label>
+						<textarea name="about-me" id="form-text" placeholder="В свободной форме"></textarea>
+					</div>
+					<span>Нажимая кнопку «Отправить», <a href="#">я подтверждаю свое согласие</a> на обработку персональных данных.</span>
+					<input type="submit" name="submit">
+					<a href="#" class="down-link">Все вакансии <i class="fas fa-arrow-right"></i></a>
+				</form>
+			</section>
+		</section>
+	</main>
+
+	<div id="to-menu"><a href="#menu">К меню <i class="fas fa-level-up-alt"></i></a></div>
+
+	<footer>
+		<div class="main-footer">
+			<section class="newsletter-socnetworks">
+				<form action="#" method="post">
+					<div class="container">
+					<h2>Подпишитесь на рассылку</h2>
+					<p>Винные истории, акции и бонусы для своих.</p>
+					</div>
+					<div class="container">
+					<input type="text" placeholder="Электронная почта" name="mail" required><button type="submit">Подписаться</button>
+					<label>
+						<input type="checkbox" checked="checked" name="subscribe">Я согласен с условиями <a href="#">пользовательского соглашения</a>
+					</label>
+					</div>
+				</form>
+			
+				<div class="soc-network">
+					<p>мы в социальных сетях</p>
+					<a href="#" title="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+					<a href="#" title="https://web.telegram.org/"><i class="fab fa-telegram-plane"></i></a>
+					<a href="#" title="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+				</div>
+			</section>
+
+			<section class="customer-buyer">
+				<div class="custom">
+					<p>покупателям</p>
+						<a href="#">как сделать заказ</a>
+						<a href="#">как получить заказ</a>
+						<a href="#">контакты</a>
+						<a href="#">обратная связь</a>
+						<a href="#">гарантия</a>
+				</div>
+				<div class="buyer">
+					<p>сотрудничество</p>
+						<a href="#">частным клиентам</a>
+						<a href="#">корпоративным клиентам</a>
+						<a href="#">вакансии</a>
+				</div>
+			</section>
+
+			<section class="location">
+				<p><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</p>
+				<a href="tel:+78142332211"><i class="fas fa-phone-alt"></i> +7(814)-233-22-11</a>
+				<a href="elevage.company@cheers.ru"><i class="fas fa-envelope"></i> elevage.company@cheers.ru</a>
+			</section>
+		</div> 
+		<div class="footer-underline">
+			<p>©ELEVAGE, 2021</p>
+			<div><a href="#">Политика конфиденциальности</a></div>
+			<div><a href="#">О качестве и безопасности товаров</a></div>
+		</div>
+	</footer>
+
+</body>
+</html>
